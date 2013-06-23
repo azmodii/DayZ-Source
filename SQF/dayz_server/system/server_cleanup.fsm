@@ -98,7 +98,7 @@ class FSM
           priority = 2.000000;
           to="cleanup_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeNem) > 60)"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeNem) > 3600)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_timeNem = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
